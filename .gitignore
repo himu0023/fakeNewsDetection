@@ -1,0 +1,9 @@
+# data files
+data/*.csv
+data/*.zip
+
+# model artifacts
+models/*.pkl
+
+# virtual environment
+venv/
