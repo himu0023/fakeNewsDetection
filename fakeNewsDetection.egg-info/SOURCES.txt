@@ -1,0 +1,7 @@
+setup.py
+fakeNewsDetection.egg-info/PKG-INFO
+fakeNewsDetection.egg-info/SOURCES.txt
+fakeNewsDetection.egg-info/dependency_links.txt
+fakeNewsDetection.egg-info/top_level.txt
+src/__init__.py
+src/text_preprocessing.py

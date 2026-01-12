@@ -2,6 +2,7 @@ import streamlit as st
 import joblib
 import numpy as np 
 import pandas as pd 
+from src.text_preprocessing import clean_no_stopwords
 
 # Load trained Pipeline
 @st.cache_resource
@@ -10,7 +11,7 @@ def load_model():
 
 model = load_model()
 
-st.set_page_config(page_title="Fake News Detector", layout="centred")
+st.set_page_config(page_title="Fake News Detector", layout="centered")
 
 st.title("Fake News Detection Demo")
 st.write(
@@ -88,6 +89,6 @@ if upload_file is not None:
 st.markdown("------")
 
 st.caption(
-    "⚠️ This model lears dataset specific writing patters."
+    "⚠️ This model learns dataset specific writing patters."
     "It should not used as real-world fact checking system."
 )
